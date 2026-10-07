@@ -1,0 +1,4 @@
+name: DiscPlayer
+version: 1.0
+main: dev.joe.DiscPlayer
+api-version: '26.3'
