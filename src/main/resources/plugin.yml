@@ -2,3 +2,8 @@ name: DiscPlayer
 version: 1.0
 main: dev.joe.DiscPlayer
 api-version: '26.3'
+depend: [voicechat]
+commands:
+  audioplayer:
+    description: Put custom audio on music discs
+    usage: /audioplayer
