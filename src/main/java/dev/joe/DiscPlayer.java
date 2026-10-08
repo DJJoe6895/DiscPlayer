@@ -32,6 +32,7 @@ public class DiscPlayer extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        audioKey = new NamespacedKey(this, "audio_id");
         getServer().getPluginManager().registerEvents(new JukeboxListener(this, audioKey), this);
         BukkitVoicechatService service = getServer().getServicesManager().load(BukkitVoicechatService.class);
         if (service != null) {
