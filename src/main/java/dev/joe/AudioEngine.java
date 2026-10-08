@@ -93,6 +93,7 @@ public class AudioEngine {
             return null;
         }
         channel.setDistance(distance);
+        channel.setCategory(AudioVoicechatPlugin.CATEGORY_ID);
 
         Thread thread = new Thread(() -> {
             OpusEncoder encoder = api.createEncoder(OpusEncoderMode.AUDIO);

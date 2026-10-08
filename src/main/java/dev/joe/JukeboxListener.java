@@ -1,11 +1,14 @@
 package dev.joe;
 
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.format.NamedTextColor;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.block.Block;
 import org.bukkit.block.Jukebox;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
@@ -83,6 +86,13 @@ public class JukeboxListener implements Listener {
             plugin.getLogger().warning("Audio file for ID " + id + " is missing");
             return;
         }
+
+        // replace the normal "Now Playing: C418 - cat" text with the song name
+        Component message = Component.text("Now Playing: " + plugin.readName(id), NamedTextColor.GREEN);
+        for (Player nearby : block.getWorld().getNearbyPlayers(block.getLocation(), 64)) {
+            nearby.sendActionBar(message);
+        }
+
         Location key = block.getLocation();
         stop(key);
         Bukkit.getScheduler().runTaskAsynchronously(plugin, () -> {
