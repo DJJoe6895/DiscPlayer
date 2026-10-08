@@ -17,10 +17,13 @@ Inspired by the [Audio Player](https://github.com/henkelmax/audio-player) mod by
 - Audio stops when the disc is taken out or the jukebox is broken
 - Adds a **DiscPlayer** slider in Simple Voice Chat's *Adjust Volumes* menu, so players can turn disc audio up or down
 
-![Tab-complete suggestions](screenshots/tab-complete.png)
-![A named disc](screenshots/named-disc.png)
-![The Now Playing text](screenshots/now-playing.png)
-![The DiscPlayer volume slider](screenshots/volume.png)
+## 📸 Screenshots
+
+| Commands | Custom Disc |
+| :---: | :---: |
+| ![Tab-complete suggestions](screenshots/tab-complete.png) | ![A named disc](screenshots/named-disc.png) |
+| **Now Playing Text** | **Voice Chat Menu** |
+| ![The Now Playing text](screenshots/now-playing.png) | ![The DiscPlayer volume slider](screenshots/volume.png) |
 
 ## 📋 Requirements
 
