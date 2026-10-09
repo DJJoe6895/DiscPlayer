@@ -42,7 +42,7 @@ There is no download page yet, so build it yourself:
    ```
    ./gradlew build
    ```
-3. Take `build/libs/DiscPlayer-1.0-SNAPSHOT-all.jar` and put it in your server's `plugins` folder. Use the `-all` file, because it has the mp3 reader built in. Delete any older DiscPlayer jar first.
+3. Take `build/libs/DiscPlayer-1.0-all.jar` and put it in your server's `plugins` folder. Use the `-all` file, because it has the mp3 reader built in. Delete any older DiscPlayer jar first.
 4. Restart the server
 
 ## 🎮 How to use
