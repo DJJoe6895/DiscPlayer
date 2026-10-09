@@ -1,9 +1,11 @@
 name: DiscPlayer
 version: 1.0
 main: dev.joe.DiscPlayer
-api-version: '26.3'
+api-version: '26.2'
 depend: [voicechat]
 commands:
   discplayer:
     description: Put custom audio on music discs
-    usage: /discplayer
+    usage: /discplayerDiscPlayer main  ❯ git pull
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
