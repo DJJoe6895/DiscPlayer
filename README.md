@@ -27,23 +27,23 @@ Inspired by the [Audio Player](https://github.com/henkelmax/audio-player) mod by
 
 ## 📋 Requirements
 
-- A **Paper 26.3** server
+- A **Paper 26.2 or 26.3** server
 - **Simple Voice Chat** installed on the server, and players need Simple Voice Chat on their client to hear the audio
 - Java 25 or newer to run the server
 
-Tested on Paper 26.3 (build 159, beta) with Simple Voice Chat 2.6.24.
+Tested on Paper 26.2 and 26.3 (build 159, beta), with Simple Voice Chat 2.6.x.
 
 ## 🔧 Installing
 
-There is no download page yet, so build it yourself:
+1. Download `DiscPlayer-1.0-all.jar` from the [Releases page](https://github.com/DJJoe6895/DiscPlayer/releases/latest)
+2. Put it in your server's `plugins` folder (delete any older DiscPlayer jar first)
+3. Restart the server
+
+### Building it yourself
 
 1. Install a **JDK 26** and clone this repo
-2. Run this in the project folder:
-   ```
-   ./gradlew build
-   ```
-3. Take `build/libs/DiscPlayer-1.0-all.jar` and put it in your server's `plugins` folder. Use the `-all` file, because it has the mp3 reader built in. Delete any older DiscPlayer jar first.
-4. Restart the server
+2. Run `./gradlew build`
+3. Use `build/libs/DiscPlayer-1.0-all.jar`. The `-all` file has the mp3 reader built in.
 
 ## 🎮 How to use
 
